@@ -1,0 +1,228 @@
+/* ====== GLOBAL RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f1f3f6;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* ====== HEADER ====== */
+header {
+  background: #2874f0;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ====== PAGE HEADING ====== */
+.heading {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* ====== PRODUCTS SECTION ====== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 20px 50px 50px;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.product h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #0b6b0b;
+  margin-bottom: 15px;
+}
+
+/* ====== BUTTONS ====== */
+button {
+  background: #ff9f00;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #fb8c00;
+  transform: scale(1.03);
+}
+
+/* ====== CART PAGE ====== */
+.cart {
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.cart ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.cart ul li {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.cart ul li span button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.cart ul li span button:nth-child(3) {
+  background: crimson;
+  color: white;
+}
+
+#total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #2874f0;
+}
+
+/* ====== LOGIN / REGISTER FORM ====== */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.form {
+  width: 360px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form input:focus {
+  border-color: #2874f0;
+  box-shadow: 0 0 6px rgba(40,116,240,0.4);
+}
+
+.form button {
+  margin-top: 15px;
+  background: #2874f0;
+  color: white;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background: #1f5ed6;
+}
+
+/* ====== REGISTER LINK ====== */
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+p a {
+  color: #2874f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .products {
+    padding: 20px;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .cart {
+    width: 90%;
+  }
+}

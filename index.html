@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My E-Commerce Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <h2 class="heading">Products</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <h3>Mobile Phone</h3>
+      <p>₹15000</p>
+      <button onclick="addToCart('Mobile Phone',15000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h3>Laptop</h3>
+      <p>₹45000</p>
+      <button onclick="addToCart('Laptop',45000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h3>Headphones</h3>
+      <p>₹2000</p>
+      <button onclick="addToCart('Headphones',2000)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
